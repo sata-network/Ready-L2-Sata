@@ -1,1 +1,1 @@
-# Ready-L2-Sata
+Empowering The Future Of Bitcoin With Sata- The First BTC Restaking Collective
