@@ -1,2 +1,15 @@
 .idea
 .DS_Store
+
+**/settings/Mainnet.toml
+**/settings/Testnet.toml
+.cache/**
+history.txt
+
+logs
+*.log
+npm-debug.log*
+coverage
+*.info
+costs-reports.json
+node_modules

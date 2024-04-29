@@ -1,0 +1,10 @@
+{
+  "editor.formatOnSave": true,
+  "files.insertFinalNewline": true,
+  "[clarity]": {
+    "editor.insertSpaces": false,
+    "editor.indentSize": 2,
+    "editor.detectIndentation": false
+  },
+  "cSpell.words": ["clar", "hirosystems", "simnet"]
+}

@@ -5,15 +5,6 @@ authors = []
 telemetry = true
 cache_dir = './.cache'
 requirements = []
-[contracts.stake]
-path = 'contracts/stake.clar'
-depends_on = [
-    "trait-ownable",
-    "trait-sip-010",
-    "sata-vault"
-]
-clarity_version = 2
-epoch = 2.4
 
 [repl]
 clarity_wasm_mode = false
@@ -28,6 +19,20 @@ trusted_sender = false
 trusted_caller = false
 callee_filter = false
 
+[contracts.trait-sip-010]
+path = "contracts/traits/trait-sip-010.clar"
+clarity_version = 2
+epoch = 2.5
+
+[contracts.trait-ownable]
+path = "contracts/traits/trait-ownable.clar"
+clarity_version = 2
+epoch = 2.5
+
+[contracts.trait-semi-fungible]
+path = "contracts/traits/trait-semi-fungible.clar"
+clarity_version = 2
+epoch = 2.5
 
 [contracts.sata-vault]
 path = "contracts/sata-vault.clar"
@@ -36,13 +41,15 @@ depends_on = [
     "trait-ownable",
     "trait-semi-fungible"
 ]
+clarity_version = 2
+epoch = 2.5
 
-[contracts.trait-sip-010]
-path = "contracts/traits/trait-sip-010.clar"
-
-[contracts.trait-ownable]
-path = "contracts/traits/trait-ownable.clar"
-
-[contracts.trait-semi-fungible]
-path = "contracts/traits/trait-semi-fungible.clar"
-
+[contracts.stake]
+path = 'contracts/stake.clar'
+depends_on = [
+    "trait-ownable",
+    "trait-sip-010",
+    "sata-vault"
+]
+clarity_version = 2
+epoch = 2.5
